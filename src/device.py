@@ -17,11 +17,13 @@ from hamiltonian import *
 supported_devices = [
     None, 
     "ibmq_16_melbourne",
-    "ibmq_5_yorktown",
-    "ibmq_burlington",
-    "ibmq_essex",
-    "ibmq_london",
-    "ibmq_vigo"
+    "ibmqx2",
+    "ibmq_athens",
+    "ibmq_belem",
+    "ibmq_lima",
+    "ibmq_quito",
+    "ibmq_santiago",
+    "ibmq_armonk"
 ]
 
 class Device():

@@ -142,7 +142,7 @@ def compute_energy(theta, backend, hamiltonian, device=None, noise_model=None, s
         # Execute the circuit (on device if specified) and get the result
         # For QASM simulator, run the circuit for as many shots as desired.
         if backend.name() == 'qasm_simulator':
-            if( noise_model != None ):
+            if noise_model is not None:
                 job = execute(circuit,
                         backend=backend,
                         shots = shots,
@@ -220,14 +220,14 @@ def compute_energy_extrap(theta, backend, hamiltonian, device, noise_model, shot
 
             # Execute the circuit (on device if specified) and get the result
             # For QASM simulator, run the circuit for as many shots as desired.
-            if( noise_model != None ):
+            if noise_model is not None:
                 job = execute(circuit,
                         backend=backend,
                         shots = shots,
                         noise_model = noise_model,
                         basis_gates = noise_model.basis_gates,
                         optimization_level=0)
-            elif device != None:
+            elif device is not None:
                 job = execute(circuit,
                         backend=backend,
                         shots = shots,

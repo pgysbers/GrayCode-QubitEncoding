@@ -4,8 +4,8 @@ from itertools import product, chain
 
 from openfermion.ops import FermionOperator, QubitOperator
 from openfermion.transforms import jordan_wigner 
-from openfermion.transforms import get_sparse_operator 
-from openfermion.utils import get_ground_state 
+from openfermion.linalg import get_sparse_operator 
+from openfermion.linalg import get_ground_state 
 
 from utils import * 
 
